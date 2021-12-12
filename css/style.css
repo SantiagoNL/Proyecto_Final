@@ -1,0 +1,1153 @@
+@charset "UTF-8";
+.menUno {
+  background-image: linear-gradient(-45deg, #caff61, #e7ffb8);
+}
+.menUno .logoMenu {
+  width: 30px;
+  height: 40px;
+}
+
+.banner-1 {
+  width: 98.7vw;
+  box-shadow: 0px 7px 6px 3px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 7px 6px 3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 7px 6px 3px rgba(0, 0, 0, 0.75);
+}
+
+.colBot-verde {
+  border: 2px solid #ff8e31;
+  border-radius: 5px;
+}
+
+.botBg-verde {
+  background-image: linear-gradient(45deg, #893b00, #e46300);
+  color: white;
+}
+
+/* NOTICIAS */
+.paiContainer {
+  display: grid;
+  grid-template-columns: 1fr 8fr 1fr;
+  grid-template-rows: 1fr 3fr 3fr 3fr;
+  height: 200vh;
+  background-image: linear-gradient(-45deg, #353535, #070707);
+  grid-template-areas: "mar1 titu mar2" "mar1 notis mar2" "vid vid vid" "foot foot foot";
+}
+.paiContainer .margen1 {
+  grid-area: mar1;
+}
+.paiContainer .margen2 {
+  grid-area: mar2;
+}
+.paiContainer .titulares {
+  grid-area: titu;
+  text-align: center;
+  margin-top: 150px;
+  height: 75px;
+}
+.paiContainer .titulares .tit {
+  color: white;
+  font-family: "Spartan", sans-serif;
+  font-weight: 800;
+  font-size: 55px;
+}
+.paiContainer .cont-not {
+  grid-area: notis;
+  margin-bottom: 200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "foto1 foto2 foto3" "not1 not2 not3";
+}
+.paiContainer .cont-not .fno {
+  width: 25vw;
+  margin: 15px;
+}
+.paiContainer .cont-not .not-1 {
+  grid-area: not1;
+}
+.paiContainer .cont-not .not-1 .foto-noti-1 {
+  display: block;
+  grid-area: foto1;
+  transition: all 0.3s;
+}
+.paiContainer .cont-not .not-1 .foto-noti-1:hover {
+  filter: grayscale(100%);
+  transform: scale(1.2);
+}
+.paiContainer .cont-not .not-1 .miniTit1 {
+  display: block;
+  font-family: "Spartan", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  color: white;
+  margin: 15px;
+}
+.paiContainer .cont-not .not-2 {
+  grid-area: not2;
+}
+.paiContainer .cont-not .not-2 .foto-noti-2 {
+  display: block;
+  grid-area: foto2;
+  transition: all 0.3s;
+}
+.paiContainer .cont-not .not-2 .foto-noti-2:hover {
+  filter: grayscale(100%);
+  transform: scale(1.2);
+}
+.paiContainer .cont-not .not-2 .miniTit2 {
+  display: block;
+  font-family: "Spartan", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  color: white;
+  margin: 15px;
+}
+.paiContainer .cont-not .not-3 {
+  grid-area: not3;
+}
+.paiContainer .cont-not .not-3 .foto-noti-3 {
+  display: block;
+  grid-area: foto3;
+  transition: all 0.3s;
+}
+.paiContainer .cont-not .not-3 .foto-noti-3:hover {
+  filter: grayscale(100%);
+  transform: scale(1.2);
+}
+.paiContainer .cont-not .not-3 .miniTit3 {
+  display: block;
+  font-family: "Spartan", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  color: white;
+  margin: 15px;
+}
+.paiContainer .con-vid {
+  grid-area: vid;
+  background-color: white;
+  text-align: center;
+}
+.paiContainer .con-vid .vidTex {
+  font-family: "Spartan", sans-serif;
+  font-weight: 800;
+  font-size: 35px;
+  color: #353535;
+  margin-top: 100px;
+}
+.paiContainer .con-vid .vid-sem {
+  width: 600px;
+  height: 350px;
+  margin-bottom: 50px;
+  box-shadow: 0px 2px 8px 6px rgba(255, 107, 0, 0.76);
+  -webkit-box-shadow: 0px 2px 8px 6px rgba(255, 107, 0, 0.76);
+  -moz-box-shadow: 0px 2px 8px 6px rgba(255, 107, 0, 0.76);
+}
+
+/* FOOTER */
+.card-foo {
+  grid-area: foot;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  background-color: black;
+  background-clip: border-box;
+  border: 0px solid #000;
+  border-radius: 0rem;
+  color: white;
+  grid-template-areas: "ct1 ct2 ct3" "cc1 cc2 cc3";
+}
+.card-foo .card-tit1 {
+  grid-area: ct1;
+  font-family: "Spartan", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  margin-left: 70px;
+  margin-top: 50px;
+}
+.card-foo .cardCont1 {
+  grid-area: cc1;
+  font-family: "Spartan", sans-serif;
+  font-weight: 200;
+  font-size: 12px;
+  margin-left: 70px;
+}
+.card-foo .card-tit2 {
+  grid-area: ct2;
+  font-family: "Spartan", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  margin-left: 70px;
+  margin-top: 50px;
+}
+.card-foo .cardCont2 {
+  grid-area: cc2;
+  font-family: "Spartan", sans-serif;
+  font-weight: 200;
+  font-size: 12px;
+  margin-left: 70px;
+}
+.card-foo .cardCont2 .linkFoot {
+  text-decoration: none;
+  color: white;
+}
+.card-foo .card-tit3 {
+  grid-area: ct3;
+  font-family: "Spartan", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  margin-left: 70px;
+  margin-top: 50px;
+}
+.card-foo .cardCont3 {
+  grid-area: cc3;
+  font-family: "Spartan", sans-serif;
+  font-weight: 200;
+  font-size: 12px;
+}
+.card-foo .cardCont3 .sociaLogo {
+  background-color: black;
+  box-shadow: 0px 0px 7px #ff8e31;
+  border-radius: 5px;
+  width: 200px;
+  height: 50px;
+  margin-left: 70px;
+  display: flex;
+}
+.card-foo .cardCont3 .sociaLogo .l-so {
+  color: white;
+}
+.card-foo .cardCont3 .sociaLogo .l-so .logos {
+  margin: 10px;
+}
+
+.card-foo-pr {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  background-color: black;
+  background-clip: border-box;
+  border: 0px solid #000;
+  border-radius: 0rem;
+  color: white;
+  grid-template-areas: "ct1 ct2 ct3" "cc1 cc2 cc3";
+}
+.card-foo-pr .card-tit1 {
+  grid-area: ct1;
+  font-family: "Spartan", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  margin-left: 70px;
+  margin-top: 50px;
+}
+.card-foo-pr .cardCont1 {
+  grid-area: cc1;
+  font-family: "Spartan", sans-serif;
+  font-weight: 200;
+  font-size: 12px;
+  margin-left: 70px;
+}
+.card-foo-pr .card-tit2 {
+  grid-area: ct2;
+  font-family: "Spartan", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  margin-left: 70px;
+  margin-top: 50px;
+}
+.card-foo-pr .cardCont2 {
+  grid-area: cc2;
+  font-family: "Spartan", sans-serif;
+  font-weight: 200;
+  font-size: 12px;
+  margin-left: 70px;
+}
+.card-foo-pr .cardCont2 .linkFoot {
+  text-decoration: none;
+  color: white;
+}
+.card-foo-pr .card-tit3 {
+  grid-area: ct3;
+  font-family: "Spartan", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  margin-left: 70px;
+  margin-top: 50px;
+}
+.card-foo-pr .cardCont3 {
+  grid-area: cc3;
+  font-family: "Spartan", sans-serif;
+  font-weight: 200;
+  font-size: 12px;
+  /*   .sociaLogo::after {
+         position: absolute;
+         content: "";
+         background-image: linear-gradient(to right, #fdc830, #f37335);
+
+         inset: 0;
+         width: 200px;
+         height: 50px;
+         filter: blur(10px);
+         z-index: -1;
+
+     }    */
+}
+.card-foo-pr .cardCont3 .sociaLogo {
+  background-color: black;
+  box-shadow: 0px 0px 7px #ff8e31;
+  border-radius: 5px;
+  width: 200px;
+  height: 50px;
+  margin-left: 70px;
+  display: flex;
+}
+.card-foo-pr .cardCont3 .sociaLogo .l-so {
+  color: white;
+}
+.card-foo-pr .cardCont3 .sociaLogo .l-so .logos {
+  margin: 10px;
+}
+
+/* MEDIA QUERY */
+@media screen and (max-width: 1280px) {
+  .banner-1 {
+    width: 100vw;
+    box-shadow: 0px 7px 6px 3px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 7px 6px 3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 7px 6px 3px rgba(0, 0, 0, 0.75);
+  }
+
+  .paiContainer {
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-rows: 1fr 3fr 3fr 3fr;
+    height: 200vh;
+    background-image: linear-gradient(-45deg, #353535, #070707);
+    grid-template-areas: "mar1 titu mar2" "mar1 notis mar2" "vid vid vid" "foot foot foot";
+  }
+  .paiContainer .card-foo {
+    grid-area: foot;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: black;
+    background-clip: border-box;
+    border: 0px solid #000;
+    border-radius: 0rem;
+    color: white;
+    grid-template-areas: "ct1 ct2 ct3" "cc1 cc2 cc3";
+  }
+  .paiContainer .card-foo .card-tit1 {
+    grid-area: ct1;
+    font-family: "Spartan", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    margin-left: 70px;
+    margin-top: 170px;
+  }
+  .paiContainer .card-foo .cardCont1 {
+    grid-area: cc1;
+    font-family: "Spartan", sans-serif;
+    font-weight: 200;
+    font-size: 12px;
+    margin-left: 70px;
+    margin-bottom: 150px;
+  }
+  .paiContainer .card-foo .card-tit2 {
+    grid-area: ct2;
+    font-family: "Spartan", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    margin-left: 70px;
+    margin-top: 170px;
+  }
+  .paiContainer .card-foo .cardCont2 {
+    grid-area: cc2;
+    font-family: "Spartan", sans-serif;
+    font-weight: 200;
+    font-size: 12px;
+    margin-left: 70px;
+    margin-bottom: 150px;
+  }
+  .paiContainer .card-foo .card-tit3 {
+    grid-area: ct3;
+    font-family: "Spartan", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    margin-left: 70px;
+    margin-top: 170px;
+  }
+  .paiContainer .card-foo .cardCont3 {
+    grid-area: cc3;
+    font-family: "Spartan", sans-serif;
+    font-weight: 200;
+    font-size: 12px;
+    margin-bottom: 150px;
+  }
+  .paiContainer .card-foo .cardCont3 .sociaLogo {
+    background-color: black;
+    box-shadow: 0px 0px 7px #ff8e31;
+    border-radius: 5px;
+    width: 150px;
+    height: 50px;
+    margin-left: 70px;
+    display: flex;
+  }
+
+  .paiContainer2 {
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-rows: 1fr 3fr 3fr 3fr;
+    height: 200vh;
+    background-image: linear-gradient(-45deg, #353535, #070707);
+    grid-template-areas: "nada1 titu nada2" "nada1 notis nada2" "vid vid vid" "foot foot foot";
+  }
+  .paiContainer2 .card-foo {
+    grid-area: foot;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: black;
+    background-clip: border-box;
+    border: 0px solid #000;
+    border-radius: 0rem;
+    color: white;
+    grid-template-areas: "ct1 ct2 ct3" "cc1 cc2 cc3";
+  }
+  .paiContainer2 .card-foo .card-tit1 {
+    grid-area: ct1;
+    font-family: "Spartan", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    margin-left: 70px;
+    margin-top: 170px;
+  }
+  .paiContainer2 .card-foo .cardCont1 {
+    grid-area: cc1;
+    font-family: "Spartan", sans-serif;
+    font-weight: 200;
+    font-size: 12px;
+    margin-left: 70px;
+    margin-bottom: 150px;
+  }
+  .paiContainer2 .card-foo .card-tit2 {
+    grid-area: ct2;
+    font-family: "Spartan", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    margin-left: 70px;
+    margin-top: 170px;
+  }
+  .paiContainer2 .card-foo .cardCont2 {
+    grid-area: cc2;
+    font-family: "Spartan", sans-serif;
+    font-weight: 200;
+    font-size: 12px;
+    margin-left: 70px;
+    margin-bottom: 150px;
+  }
+  .paiContainer2 .card-foo .card-tit3 {
+    grid-area: ct3;
+    font-family: "Spartan", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    margin-left: 70px;
+    margin-top: 170px;
+  }
+  .paiContainer2 .card-foo .cardCont3 {
+    grid-area: cc3;
+    font-family: "Spartan", sans-serif;
+    font-weight: 200;
+    font-size: 12px;
+    margin-bottom: 150px;
+  }
+  .paiContainer2 .card-foo .cardCont3 .sociaLogo {
+    background-color: black;
+    box-shadow: 0px 0px 7px #ff8e31;
+    border-radius: 5px;
+    width: 150px;
+    height: 50px;
+    margin-left: 70px;
+    display: flex;
+  }
+
+  .card-foo-pr {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: black;
+    background-clip: border-box;
+    border: 0px solid #000;
+    border-radius: 0rem;
+    color: white;
+    grid-template-areas: "ct1 ct2 ct3" "cc1 cc2 cc3";
+  }
+  .card-foo-pr .card-tit1 {
+    grid-area: ct1;
+    font-family: "Spartan", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    margin-left: 70px;
+    margin-top: 170px;
+  }
+  .card-foo-pr .cardCont1 {
+    grid-area: cc1;
+    font-family: "Spartan", sans-serif;
+    font-weight: 200;
+    font-size: 12px;
+    margin-left: 70px;
+    margin-bottom: 150px;
+  }
+  .card-foo-pr .card-tit2 {
+    grid-area: ct2;
+    font-family: "Spartan", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    margin-left: 70px;
+    margin-top: 170px;
+  }
+  .card-foo-pr .cardCont2 {
+    grid-area: cc2;
+    font-family: "Spartan", sans-serif;
+    font-weight: 200;
+    font-size: 12px;
+    margin-left: 70px;
+    margin-bottom: 150px;
+  }
+  .card-foo-pr .card-tit3 {
+    grid-area: ct3;
+    font-family: "Spartan", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    margin-left: 70px;
+    margin-top: 170px;
+  }
+  .card-foo-pr .cardCont3 {
+    grid-area: cc3;
+    font-family: "Spartan", sans-serif;
+    font-weight: 200;
+    font-size: 12px;
+    margin-bottom: 150px;
+  }
+  .card-foo-pr .cardCont3 .sociaLogo {
+    background-color: black;
+    box-shadow: 0px 0px 7px #ff8e31;
+    border-radius: 5px;
+    width: 150px;
+    height: 50px;
+    margin-left: 70px;
+    display: flex;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .banner-1 {
+    width: 100vw;
+    box-shadow: 0px 7px 6px 3px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 7px 6px 3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 7px 6px 3px rgba(0, 0, 0, 0.75);
+  }
+
+  .paiContainer {
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-rows: 1fr 3fr 3fr 3fr;
+    height: 200vh;
+    background-image: linear-gradient(-45deg, #353535, #070707);
+    grid-template-areas: "mar1 titu mar2" "mar1 notis mar2" "vid vid vid" "foot foot foot";
+  }
+  .paiContainer .titulares {
+    grid-area: titu;
+    text-align: center;
+    margin-top: 150px;
+    height: 75px;
+  }
+  .paiContainer .titulares .tit {
+    color: white;
+    font-family: "Spartan", sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+  }
+  .paiContainer .cont-not {
+    grid-area: notis;
+    margin-bottom: 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "foto1 foto2 foto3" "not1 not2 not3";
+  }
+  .paiContainer .cont-not .fno {
+    width: 25vw;
+    margin: 15px;
+  }
+  .paiContainer .cont-not .not-1 {
+    grid-area: not1;
+  }
+  .paiContainer .cont-not .not-1 .miniTit1 {
+    display: block;
+    font-family: "Spartan", sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    color: white;
+    margin: 15px;
+  }
+  .paiContainer .cont-not .not-2 {
+    grid-area: not2;
+  }
+  .paiContainer .cont-not .not-2 .miniTit2 {
+    display: block;
+    font-family: "Spartan", sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    color: white;
+    margin: 15px;
+  }
+  .paiContainer .cont-not .not-3 {
+    grid-area: not3;
+  }
+  .paiContainer .cont-not .not-3 .miniTit3 {
+    display: block;
+    font-family: "Spartan", sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    color: white;
+    margin: 15px;
+  }
+  .paiContainer .card-foo {
+    grid-area: foot;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: black;
+    background-clip: border-box;
+    border: 0px solid #000;
+    border-radius: 0rem;
+    color: white;
+    grid-template-areas: "ct1 ct2 ct3" "cc1 cc2 cc3";
+  }
+  .paiContainer .card-foo .card-tit1 {
+    grid-area: ct1;
+    font-family: "Spartan", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    margin-left: 70px;
+    margin-top: 200px;
+  }
+  .paiContainer .card-foo .card-tit2 {
+    grid-area: ct2;
+    font-family: "Spartan", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    margin-left: 70px;
+    margin-top: 200px;
+  }
+  .paiContainer .card-foo .card-tit3 {
+    grid-area: ct3;
+    font-family: "Spartan", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    margin-left: 70px;
+    margin-top: 200px;
+  }
+
+  .paiContainer2 {
+    display: grid;
+    grid-template-columns: 3fr 8fr 1fr;
+    grid-template-rows: 1fr 3fr 3fr 3fr;
+    height: 200vh;
+    background-image: linear-gradient(-45deg, #353535, #070707);
+    grid-template-areas: "nada1 titu nada2" "nada1 notis nada2" "vid vid vid" "foot foot foot";
+  }
+  .paiContainer2 .titulares {
+    grid-area: titu;
+    color: white;
+    font-family: "Spartan", sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 150px;
+    height: 75px;
+  }
+  .paiContainer2 .cont-not-nos {
+    grid-area: notis;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "foto1 foto2 foto3" "not1 not2 not3";
+  }
+  .paiContainer2 .cont-not-nos .not-1-nos {
+    grid-area: not1;
+  }
+  .paiContainer2 .cont-not-nos .not-2-nos {
+    grid-area: not2;
+  }
+  .paiContainer2 .cont-not-nos .not-3-nos {
+    grid-area: not3;
+  }
+  .paiContainer2 .card-foo {
+    grid-area: foot;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: black;
+    background-clip: border-box;
+    border: 0px solid #000;
+    border-radius: 0rem;
+    color: white;
+    grid-template-areas: "ct1 ct2 ct3" "cc1 cc2 cc3";
+  }
+  .paiContainer2 .card-foo .card-tit1 {
+    grid-area: ct1;
+    font-family: "Spartan", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    margin-left: 70px;
+    margin-top: 200px;
+  }
+  .paiContainer2 .card-foo .card-tit2 {
+    grid-area: ct2;
+    font-family: "Spartan", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    margin-left: 70px;
+    margin-top: 200px;
+  }
+  .paiContainer2 .card-foo .card-tit3 {
+    grid-area: ct3;
+    font-family: "Spartan", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    margin-left: 70px;
+    margin-top: 200px;
+  }
+
+  .card-foo-pr {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: black;
+    background-clip: border-box;
+    border: 0px solid #000;
+    border-radius: 0rem;
+    color: white;
+    grid-template-areas: "ct1 ct2 ct3" "cc1 cc2 cc3";
+  }
+  .card-foo-pr .card-tit1 {
+    grid-area: ct1;
+    font-family: "Spartan", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    margin-left: 70px;
+    margin-top: 200px;
+  }
+  .card-foo-pr .card-tit2 {
+    grid-area: ct2;
+    font-family: "Spartan", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    margin-left: 70px;
+    margin-top: 200px;
+  }
+  .card-foo-pr .card-tit3 {
+    grid-area: ct3;
+    font-family: "Spartan", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    margin-left: 70px;
+    margin-top: 200px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .paiContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3fr 3fr 3fr;
+    height: 200vh;
+    background-image: linear-gradient(-45deg, #353535, #070707);
+    grid-template-areas: "titu" "notis" "vid" "foot";
+  }
+  .paiContainer .margen1 {
+    display: none;
+    grid-area: mar1;
+  }
+  .paiContainer .margen2 {
+    display: none;
+    grid-area: mar2;
+  }
+  .paiContainer .titulares {
+    grid-area: titu;
+    text-align: center;
+    margin-top: 150px;
+    height: 75px;
+  }
+  .paiContainer .titulares .tit {
+    color: white;
+    font-family: "Spartan", sans-serif;
+    font-weight: 800;
+    font-size: 28px;
+  }
+  .paiContainer .cont-not {
+    grid-area: notis;
+    margin-bottom: 200px;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "not1" "not2" "not3";
+  }
+  .paiContainer .cont-not .fno {
+    width: 50vw;
+    margin: 15px;
+  }
+  .paiContainer .cont-not .not-1 {
+    width: 400px;
+    grid-area: not1;
+  }
+  .paiContainer .cont-not .not-1 .foto-noti-1 {
+    display: block;
+    grid-area: foto1;
+    transition: all 0.3s;
+    text-align: center;
+  }
+  .paiContainer .cont-not .not-1 .foto-noti-1:hover {
+    filter: grayscale(100%);
+    transform: scale(1.2);
+  }
+  .paiContainer .cont-not .not-1 .miniTit1 {
+    display: block;
+    font-family: "Spartan", sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    color: white;
+    margin: 15px;
+  }
+  .paiContainer .cont-not .not-2 {
+    width: 400px;
+    grid-area: not2;
+  }
+  .paiContainer .cont-not .not-2 .foto-noti-2 {
+    display: block;
+    grid-area: foto2;
+    transition: all 0.3s;
+    text-align: center;
+  }
+  .paiContainer .cont-not .not-2 .foto-noti-2:hover {
+    filter: grayscale(100%);
+    transform: scale(1.2);
+  }
+  .paiContainer .cont-not .not-2 .miniTit2 {
+    display: block;
+    font-family: "Spartan", sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    color: white;
+    margin: 15px;
+  }
+  .paiContainer .cont-not .not-3 {
+    width: 400px;
+    grid-area: not3;
+  }
+  .paiContainer .cont-not .not-3 .foto-noti-3 {
+    display: block;
+    grid-area: foto3;
+    transition: all 0.3s;
+    text-align: center;
+  }
+  .paiContainer .cont-not .not-3 .foto-noti-3:hover {
+    filter: grayscale(100%);
+    transform: scale(1.2);
+  }
+  .paiContainer .cont-not .not-3 .miniTit3 {
+    display: block;
+    font-family: "Spartan", sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    color: white;
+    margin: 15px;
+  }
+  .paiContainer .con-vid {
+    grid-area: vid;
+    background-color: white;
+    text-align: center;
+  }
+  .paiContainer .con-vid .vidTex {
+    font-family: "Spartan", sans-serif;
+    font-weight: 800;
+    font-size: 35px;
+    color: #353535;
+    margin-top: 100px;
+  }
+  .paiContainer .con-vid .vid-sem {
+    width: 400px;
+    height: 225px;
+    margin-bottom: 50px;
+    box-shadow: 0px 2px 8px 6px rgba(255, 107, 0, 0.76);
+    -webkit-box-shadow: 0px 2px 8px 6px rgba(255, 107, 0, 0.76);
+    -moz-box-shadow: 0px 2px 8px 6px rgba(255, 107, 0, 0.76);
+  }
+  .paiContainer .card-foo {
+    grid-area: foot;
+    display: block;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: black;
+    background-clip: border-box;
+    border: 0px solid #000;
+    border-radius: 0rem;
+    color: white;
+  }
+  .paiContainer .card-foo .card-tit1 {
+    grid-area: ct1;
+    font-family: "Spartan", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    margin-left: 70px;
+    margin-top: 100px;
+  }
+  .paiContainer .card-foo .cardCont1 {
+    grid-area: cc1;
+    font-family: "Spartan", sans-serif;
+    font-weight: 200;
+    font-size: 12px;
+    margin-left: 70px;
+    margin-bottom: 50px;
+  }
+  .paiContainer .card-foo .card-tit2 {
+    grid-area: ct2;
+    font-family: "Spartan", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    margin-left: 70px;
+    margin-top: 40px;
+  }
+  .paiContainer .card-foo .cardCont2 {
+    grid-area: cc2;
+    font-family: "Spartan", sans-serif;
+    font-weight: 200;
+    font-size: 12px;
+    margin-left: 70px;
+    margin-bottom: 50px;
+  }
+  .paiContainer .card-foo .card-tit3 {
+    grid-area: ct3;
+    font-family: "Spartan", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    margin-left: 70px;
+    margin-top: 40px;
+  }
+
+  .card-foo-pr {
+    display: block;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: black;
+    background-clip: border-box;
+    border: 0px solid #000;
+    border-radius: 0rem;
+    color: white;
+  }
+  .card-foo-pr .card-tit1 {
+    grid-area: ct1;
+    font-family: "Spartan", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    margin-left: 70px;
+    margin-top: 100px;
+  }
+  .card-foo-pr .cardCont1 {
+    grid-area: cc1;
+    font-family: "Spartan", sans-serif;
+    font-weight: 200;
+    font-size: 12px;
+    margin-left: 70px;
+    margin-bottom: 50px;
+  }
+  .card-foo-pr .card-tit2 {
+    grid-area: ct2;
+    font-family: "Spartan", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    margin-left: 70px;
+    margin-top: 40px;
+  }
+  .card-foo-pr .cardCont2 {
+    grid-area: cc2;
+    font-family: "Spartan", sans-serif;
+    font-weight: 200;
+    font-size: 12px;
+    margin-left: 70px;
+    margin-bottom: 50px;
+  }
+  .card-foo-pr .card-tit3 {
+    grid-area: ct3;
+    font-family: "Spartan", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    margin-left: 70px;
+    margin-top: 40px;
+  }
+  .card-foo-pr .cardCont3 {
+    grid-area: cc3;
+    font-family: "Spartan", sans-serif;
+    font-weight: 200;
+    font-size: 12px;
+    padding-bottom: 150px;
+  }
+  .card-foo-pr .cardCont3 .sociaLogo {
+    background-color: black;
+    box-shadow: 0px 0px 7px #ff8e31;
+    border-radius: 5px;
+    width: 150px;
+    height: 50px;
+    margin-left: 70px;
+    display: flex;
+  }
+
+  .paiContainer2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 3fr 3fr;
+    height: 300vh;
+    background-image: linear-gradient(-45deg, #353535, #070707);
+    grid-template-areas: "titu" "notis" "foot";
+  }
+  .paiContainer2 .margen-1 {
+    display: none;
+    grid-area: nada;
+  }
+  .paiContainer2 .margen-2 {
+    display: none;
+    grid-area: nada2;
+  }
+  .paiContainer2 .titulares {
+    grid-area: titu;
+    color: white;
+    font-family: "Spartan", sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 100px;
+    height: 75px;
+  }
+  .paiContainer2 .cont-not-nos {
+    grid-area: notis;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "not1" "not2" "not3";
+  }
+  .paiContainer2 .cont-not-nos .fno {
+    width: 50vw;
+    margin: 15px;
+  }
+  .paiContainer2 .cont-not-nos .not-1-nos {
+    width: 400px;
+    grid-area: not1;
+  }
+  .paiContainer2 .cont-not-nos .not-2-nos {
+    width: 400px;
+    grid-area: not2;
+  }
+  .paiContainer2 .cont-not-nos .not-3-nos {
+    width: 400px;
+    grid-area: not3;
+    margin-bottom: 100px;
+  }
+}
+/* CONTENIDO PRODUCTOS */
+.bordes {
+  padding-right: 5rem;
+  padding-left: 5rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.barraBuscar {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.tit2 {
+  text-align: center;
+  margin: 50px 0PX;
+  height: 75px;
+  color: black;
+  font-family: "Spartan", sans-serif;
+  font-weight: 800;
+  font-size: 55px;
+}
+
+.prodTamaño {
+  width: 14rem;
+}
+
+/* NOSOTROS */
+.paiContainer2 {
+  display: grid;
+  grid-template-columns: 1fr 8fr 1fr;
+  grid-template-rows: 1fr 3fr 3fr;
+  height: 200vh;
+  background-image: linear-gradient(-45deg, #353535, #070707);
+  grid-template-areas: "nada titu nada2" "nada notis nada2" "foot foot foot";
+}
+.paiContainer2 .margen-1 {
+  grid-area: nada;
+}
+.paiContainer2 .margen-2 {
+  grid-area: nada2;
+}
+.paiContainer2 .titulares {
+  grid-area: titu;
+  color: white;
+  font-family: "Spartan", sans-serif;
+  font-weight: 800;
+  font-size: 55px;
+  text-align: center;
+  margin-top: 150px;
+  height: 75px;
+}
+.paiContainer2 .cont-not-nos {
+  grid-area: notis;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "not1" "not2" "not3";
+}
+.paiContainer2 .cont-not-nos .fno {
+  width: 25vw;
+  margin: 15px;
+}
+.paiContainer2 .cont-not-nos .not-1-nos {
+  grid-area: not1;
+}
+.paiContainer2 .cont-not-nos .not-1-nos .textosNos {
+  color: white;
+  font-family: "Spartan", sans-serif;
+  font-weight: 200;
+  font-size: 15px;
+  text-align: justify;
+}
+.paiContainer2 .cont-not-nos .not-2-nos {
+  grid-area: not2;
+}
+.paiContainer2 .cont-not-nos .not-2-nos .textosNos {
+  color: white;
+  font-family: "Spartan", sans-serif;
+  font-weight: 200;
+  font-size: 15px;
+  text-align: justify;
+}
+.paiContainer2 .cont-not-nos .not-3-nos {
+  grid-area: not3;
+}
+.paiContainer2 .cont-not-nos .not-3-nos .textosNos {
+  color: white;
+  font-family: "Spartan", sans-serif;
+  font-weight: 200;
+  font-size: 15px;
+  text-align: justify;
+}
+
+/*# sourceMappingURL=style.css.map */

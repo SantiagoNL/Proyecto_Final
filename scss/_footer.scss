@@ -1,0 +1,221 @@
+/* FOOTER */
+
+.card-foo {
+    grid-area: foot;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: rgb(0, 0, 0);
+    background-clip: border-box;
+    border: 0px solid #000;
+    border-radius: 0rem;
+    color: white;
+    grid-template-areas: 
+    "ct1 ct2 ct3"
+    "cc1 cc2 cc3";
+
+
+    .card-tit1 {
+        grid-area: ct1;
+        font-family: "Spartan", sans-serif;
+        font-weight: 500;
+        font-size: 15px;
+        margin-left: 70px;
+        margin-top: 50px;
+
+    }
+
+    .cardCont1 {
+        grid-area: cc1;
+        font-family: "Spartan", sans-serif;
+        font-weight: 200;
+        font-size: 12px;
+        margin-left: 70px;
+    }
+
+
+    .card-tit2 {
+        grid-area: ct2;
+        font-family: "Spartan", sans-serif;
+        font-weight: 500;
+        font-size: 15px;
+        margin-left: 70px;
+        margin-top: 50px;
+
+    }
+
+    .cardCont2 {
+        grid-area: cc2;
+        font-family: "Spartan", sans-serif;
+        font-weight: 200;
+        font-size: 12px;
+        margin-left: 70px;
+
+        .linkFoot {
+            text-decoration: none;
+            color: white;
+        }
+    }
+
+
+
+    .card-tit3 {
+        grid-area: ct3;
+        font-family: "Spartan", sans-serif;
+        font-weight: 500;
+        font-size: 15px;
+        margin-left: 70px;
+        margin-top: 50px;
+
+    }
+
+
+        .cardCont3 {
+            grid-area: cc3;
+            font-family: "Spartan", sans-serif;
+            font-weight: 200;
+            font-size: 12px;
+
+            .sociaLogo {
+                background-color: black;
+                box-shadow: 0px 0px 7px #ff8e31;
+                border-radius: 5px;
+                width: 200px;
+                height: 50px;
+                margin-left: 70px;
+                display: flex;
+
+                .l-so {
+                    color: white;
+
+                    .logos {
+                        margin: 10px;
+                    }
+                }
+
+
+                }
+
+        }
+    
+
+}
+
+
+
+
+.card-foo-pr {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: rgb(0, 0, 0);
+    background-clip: border-box;
+    border: 0px solid #000;
+    border-radius: 0rem;
+    color: white;
+    grid-template-areas: 
+    "ct1 ct2 ct3"
+    "cc1 cc2 cc3";
+
+
+    .card-tit1 {
+        grid-area: ct1;
+        font-family: "Spartan", sans-serif;
+        font-weight: 500;
+        font-size: 15px;
+        margin-left: 70px;
+        margin-top: 50px;
+
+    }
+
+    .cardCont1 {
+        grid-area: cc1;
+        font-family: "Spartan", sans-serif;
+        font-weight: 200;
+        font-size: 12px;
+        margin-left: 70px;
+    }
+
+
+    .card-tit2 {
+        grid-area: ct2;
+        font-family: "Spartan", sans-serif;
+        font-weight: 500;
+        font-size: 15px;
+        margin-left: 70px;
+        margin-top: 50px;
+
+    }
+
+    .cardCont2 {
+        grid-area: cc2;
+        font-family: "Spartan", sans-serif;
+        font-weight: 200;
+        font-size: 12px;
+        margin-left: 70px;
+
+        .linkFoot {
+            text-decoration: none;
+            color: white;
+        }
+    }
+
+
+
+    .card-tit3 {
+        grid-area: ct3;
+        font-family: "Spartan", sans-serif;
+        font-weight: 500;
+        font-size: 15px;
+        margin-left: 70px;
+        margin-top: 50px;
+
+    }
+
+
+        .cardCont3 {
+            grid-area: cc3;
+            font-family: "Spartan", sans-serif;
+            font-weight: 200;
+            font-size: 12px;
+
+            .sociaLogo {
+                background-color: black;
+                box-shadow: 0px 0px 7px #ff8e31;
+                border-radius: 5px;
+                width: 200px;
+                height: 50px;
+                margin-left: 70px;
+                display: flex;
+
+                .l-so {
+                    color: white;
+
+                    .logos {
+                        margin: 10px;
+                    }
+                }
+
+
+                }
+
+             /*   .sociaLogo::after {
+                    position: absolute;
+                    content: "";
+                    background-image: linear-gradient(to right, #fdc830, #f37335);
+        
+                    inset: 0;
+                    width: 200px;
+                    height: 50px;
+                    filter: blur(10px);
+                    z-index: -1;
+        
+                }    */
+        }
+    
+        
+
+
+
+
+}
