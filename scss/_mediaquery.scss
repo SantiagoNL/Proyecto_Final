@@ -1118,8 +1118,413 @@
 
 
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 399px) {
+
+    .paiContainer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 3fr 3fr 3fr;
+        height: 200vh;
+        background-image: linear-gradient(-45deg, #353535, #070707) ;
+        grid-template-areas: 
+        "titu"
+        "notis"
+        "vid"
+        "foot";
 
 
+        .margen1 {
+            display: none;
+            grid-area: mar1;
+        }
+    
+        .margen2 {
+            display: none;
+            grid-area: mar2;
+        }
+
+
+
+        .titulares {
+            grid-area: titu;
+            text-align: center;
+            margin-top: 150px;
+            height: 75px;
+    
+            .tit {
+                color: white;
+                font-family: 'Spartan', sans-serif;
+                font-weight: 800;
+                font-size: 28px;
+            }
+        }
+
+
+
+
+        .cont-not {
+            grid-area: notis;
+            margin-bottom: 200px;
+            display: grid;
+            justify-items: center;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-areas: 
+            "not1"
+            "not2"
+            "not3";
+        
+    
+    
+            .fno {
+                width: 60vw;
+                margin: 15px;
+            }
+    
+            .not-1 {
+                width: 300px;
+                grid-area: not1;
+                align-items: center;
+    
+                .foto-noti-1 {
+                    display: block;
+                    grid-area: foto1;
+                    transition: all 0.3s;
+                    text-align: center;
+    
+                    &:hover {
+                        filter: grayscale(100%);
+                        transform: scale(1);
+                    }
+                }
+    
+                .miniTit1 {
+                    display: block;
+                    font-family: 'Spartan', sans-serif;
+                    font-weight: 600;
+                    font-size: 15px;
+                    color: white;
+                    margin: 15px;
+                }
+    
+            }
+    
+            .not-2 {
+                width: 300px;
+                grid-area: not2;
+    
+                .foto-noti-2 {
+                    display: block;
+                    grid-area: foto2;
+                    transition: all 0.3s;
+                    text-align: center;
+    
+                    &:hover {
+                        filter: grayscale(100%);
+                        transform: scale(1);
+                    }
+                }
+    
+                .miniTit2 {
+                    display: block;
+                    font-family: 'Spartan', sans-serif;
+                    font-weight: 600;
+                    font-size: 15px;
+                    color: white;
+                    margin: 15px;
+                }
+    
+            }
+    
+            .not-3 {
+                width: 300px;
+                grid-area: not3;
+                
+    
+                .foto-noti-3 {
+                    display: block;
+                    grid-area: foto3;
+                    transition: all 0.3s;
+                    text-align: center;
+    
+                    &:hover {
+                        filter: grayscale(100%);
+                        transform: scale(1);
+                    }
+                }
+    
+                .miniTit3 {
+                    display: block;
+                    font-family: 'Spartan', sans-serif;
+                    font-weight: 600;
+                    font-size: 15px;
+                    color: white;
+    
+                    margin: 15px;
+                }
+    
+            }
+    
+        }
+
+
+
+
+
+
+
+        .con-vid {
+            grid-area: vid;
+            background-color: white;
+            text-align: center;
+
+            .vidTex {
+                font-family: 'Spartan', sans-serif;
+                font-weight: 800;
+                font-size: 35px;
+                color: #353535;
+                margin-top: 100px;
+            }
+
+            .vid-sem {
+                width: 280px;
+                height: 160px;
+                margin-bottom: 50px;
+                box-shadow: 0px 2px 8px 6px rgba(255,107,0,0.76);
+                -webkit-box-shadow: 0px 2px 8px 6px rgba(255,107,0,0.76);
+                -moz-box-shadow: 0px 2px 8px 6px rgba(255,107,0,0.76);
+            }
+
+        }
+
+
+
+        .card-foo {
+            grid-area: foot;
+            display: block;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            background-color: rgb(0, 0, 0);
+            background-clip: border-box;
+            border: 0px solid #000;
+            border-radius: 0rem;
+            color: white;
+
+        
+        
+            .card-tit1 {
+                grid-area: ct1;
+                font-family: "Spartan", sans-serif;
+                font-weight: 500;
+                font-size: 15px;
+                margin-left: 70px;
+                margin-top: 100px;
+            }
+
+            .cardCont1 {
+                grid-area: cc1;
+                font-family: "Spartan", sans-serif;
+                font-weight: 200;
+                font-size: 12px;
+                margin-left: 70px;
+                margin-bottom: 50px;
+            }
+        
+            .card-tit2 {
+                grid-area: ct2;
+                font-family: "Spartan", sans-serif;
+                font-weight: 500;
+                font-size: 15px;
+                margin-left: 70px;
+                margin-top: 40px;
+            }
+
+            .cardCont2 {
+                grid-area: cc2;
+                font-family: "Spartan", sans-serif;
+                font-weight: 200;
+                font-size: 12px;
+                margin-left: 70px;
+                margin-bottom: 50px;
+            }
+        
+            .card-tit3 {
+                grid-area: ct3;
+                font-family: "Spartan", sans-serif;
+                font-weight: 500;
+                font-size: 15px;
+                margin-left: 70px;
+                margin-top: 40px;
+            }
+            
+        
+        }
+
+
+    }
+
+
+
+    .card-foo-pr {
+        display: block;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        background-color: rgb(0, 0, 0);
+        background-clip: border-box;
+        border: 0px solid #000;
+        border-radius: 0rem;
+        color: white;
+
+    
+    
+        .card-tit1 {
+            grid-area: ct1;
+            font-family: "Spartan", sans-serif;
+            font-weight: 500;
+            font-size: 15px;
+            margin-left: 70px;
+            margin-top: 100px;
+        }
+
+        .cardCont1 {
+            grid-area: cc1;
+            font-family: "Spartan", sans-serif;
+            font-weight: 200;
+            font-size: 12px;
+            margin-left: 70px;
+            margin-bottom: 50px;
+        }
+    
+        .card-tit2 {
+            grid-area: ct2;
+            font-family: "Spartan", sans-serif;
+            font-weight: 500;
+            font-size: 15px;
+            margin-left: 70px;
+            margin-top: 40px;
+        }
+
+        .cardCont2 {
+            grid-area: cc2;
+            font-family: "Spartan", sans-serif;
+            font-weight: 200;
+            font-size: 12px;
+            margin-left: 70px;
+            margin-bottom: 50px;
+        }
+    
+        .card-tit3 {
+            grid-area: ct3;
+            font-family: "Spartan", sans-serif;
+            font-weight: 500;
+            font-size: 15px;
+            margin-left: 70px;
+            margin-top: 40px;
+        }
+
+        .cardCont3 {
+            grid-area: cc3;
+            font-family: "Spartan", sans-serif;
+            font-weight: 200;
+            font-size: 12px;
+            padding-bottom: 150px;
+
+            .sociaLogo {
+                background-color: black;
+                box-shadow: 0px 0px 7px #ff8e31;
+                border-radius: 5px;
+                width: 150px;
+                height: 50px;
+                margin-left: 70px;
+                display: flex;
+             }
+
+        }
+        
+    
+    }
+
+
+
+
+
+    .paiContainer2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr 3fr 3fr;
+        height: 300vh;
+        background-image: linear-gradient(-45deg, #353535, #070707) ;
+        grid-template-areas: 
+        "titu"
+        "notis"
+        "foot";
+
+
+        .margen-1 {
+            display: none;
+            grid-area: nada;
+        }
+    
+        .margen-2 {
+            display: none;
+            grid-area: nada2;
+        }
+
+
+
+    .titulares {
+        grid-area: titu;
+        color: white;
+        font-family: 'Spartan', sans-serif;
+        font-weight: 800;
+        font-size: 30px;
+        text-align: center;
+        margin-top: 100px;
+        height: 75px;
+    }
+
+
+
+
+        .cont-not-nos {
+            grid-area: notis;
+            display: grid;
+            justify-items: center;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-areas: 
+            "not1"
+            "not2"
+            "not3";
+        
+    
+    
+            .fno {
+                width: 50vw;
+                margin: 15px;
+            }
+    
+            .not-1-nos {
+                width: 400px;
+                grid-area: not1;
+    
+            }
+    
+            .not-2-nos {
+                width: 400px;
+                grid-area: not2;
+    
+            }
+    
+            .not-3-nos {
+                width: 400px;
+                grid-area: not3;
+                margin-bottom: 100px;
+    
+            }
+    
+        }
+
+    }
     
 }
