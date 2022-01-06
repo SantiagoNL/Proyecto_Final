@@ -1,108 +1,30 @@
-/* NOSOTROS */
-
-.paiContainer2 {
-    display: grid;
-    grid-template-columns: 1fr 8fr 1fr;
-    grid-template-rows: 1fr 3fr 3fr;
-    height: 230vh;
-    background-image: linear-gradient(-45deg, #353535, #070707) ;
-    grid-template-areas: 
-    "nada titu nada2"
-    "nada notis nada2"
-    "foot foot foot";
+.fondo {
+    background-image: linear-gradient(-45deg, #353535, #070707);
+}
 
 
 
-    .margen-1 {
-        grid-area: nada;
-    }
+.contNos {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: justify;
 
-    .margen-2 {
-        grid-area: nada2;
-    }
 
 
-    .titulares-2 {
-        grid-area: titu;
+
+    .cont-2, .cont-4, .cont-6 {
+        width: 80vw;
         color: white;
         font-family: 'Spartan', sans-serif;
-        font-weight: 800;
-        font-size: 55px;
-        text-align: center;
-        margin-top: 150px;
-        height: 75px;
+        font-weight: 200;
+        font-size: 15px;
+        margin-bottom: 50px;
     }
 
-
-
-    .cont-not-nos {
-        grid-area: notis;
-        display: grid;
-        grid-template-columns:  1fr;
-        grid-template-rows: 1fr;
-        grid-template-areas: 
-        "not1"
-        "not2"
-        "not3";
-
-
-        .fno {
-            width: 25vw;
-            margin: 15px;
-        }
-
-        .not-1-nos {
-            grid-area: not1;
-
-            .textosNos {
-                color: white;
-                font-family: 'Spartan', sans-serif;
-                font-weight: 200;
-                font-size: 15px;
-                text-align: justify;
-            }
-
-        
-
-        }
-
-        .not-2-nos {
-            grid-area: not2;
-
-            .textosNos {
-                color: white;
-                font-family: 'Spartan', sans-serif;
-                font-weight: 200;
-                font-size: 15px;
-                text-align: justify;
-            }
-
-        }
-
-        .not-3-nos {
-            grid-area: not3;
-         
-            .textosNos {
-                color: white;
-                font-family: 'Spartan', sans-serif;
-                font-weight: 200;
-                font-size: 15px;
-                text-align: justify;
-            }
-        }
-
+    .cont-6 {
+        margin-bottom: 100px;
     }
 
-
-
-
-
-
-
-
-
-
-
-
-    
 }
